@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+
+    tools:context="com.group_8.app.reminder.activity.TaskActivity">
+
+    <LinearLayout
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/task_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textCapSentences"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:hint="@string/task_name"
+            android:textSize="@dimen/size_name"/>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="left"
+            android:hint="@string/description"
+            android:textSize="@dimen/size_description"/>
+
+        <ImageView
+            android:id="@+id/ivpicture"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <VideoView
+            android:id="@+id/vvvideo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <ProgressBar
+            android:id="@+id/pgb_load_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/video"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_videocam" />
+
+            <ImageButton
+                android:id="@+id/camera"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_photo_camera" />
+
+            <ImageButton
+                android:id="@+id/image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_gallery" />
+
+            <ImageButton
+                android:id="@+id/generateText"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_camera_to_text" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview1"
+                android:scrollbars="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                />
+        </LinearLayout>
+
+        //Thời gian bắt đầu
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/time_start"
+            android:textSize="@dimen/size_time" />
+
+        <TextView
+            android:id="@+id/timeStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="23/03/2017 5:30pm"
+            android:textSize="@dimen/size_time" />
+
+        //Thời gian kết thúc
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/time_end"
+            android:textSize="@dimen/size_time" />
+
+        <TextView
+            android:id="@+id/timeEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="23/03/2017 5:30pm"
+            android:textSize="@dimen/size_time" />
+
+
+        //Layout tiến độ
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/progress"
+                android:textSize="@dimen/size_notify" />
+
+            <Spinner
+                android:id="@+id/sprogress"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        //Thông báo + tick
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:text="@string/notify"
+                android:textSize="@dimen/size_notify" />
+
+            <CheckBox
+                android:id="@+id/cbNotify"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:buttonTint="@android:color/black"
+                android:checked="true"/>
+
+        </LinearLayout>
+
+        //thời gian thông báo + xóa/save
+
+
+        <TextView
+            android:id="@+id/timeNotify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:textSize="@dimen/size_time" />
+
+
+        <ImageButton
+            android:id="@+id/ibDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_rubbish_bin"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

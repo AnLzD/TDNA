@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="priority_color">
+        <item>255-255-000-000</item>
+        <item>255-000-255-000</item>
+        <item>255-000-000-255</item>
+        <item>255-100-100-100</item>
+    </array>
+</resources>

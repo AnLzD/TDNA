@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <string name="app_name">Quản lý thời gian biểu</string>
+    <string name="activityTitle">Quản lý thời gian biểu</string>
+    <string name="today">Today</string>
+    <string name="noTask">Bạn không có công việc nào</string>
+    <string name="tomorow">Tomorow</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="setting">Setting</string>
+    <string name="progress_new">Vừa tạo</string>
+    <string name="progress_in">Đang thực hiện</string>
+    <string name="progress_complete">Hoàn thành</string>
+    <string name="progress_out">Trễ hạn</string>
+
+    <array name="priority_array">
+        <item>Quan trọng</item>
+        <item>Bình thường</item>
+        <item>Khẩn cấp</item>
+        <item>Rất khẩn cấp</item>
+    </array>
+
+    <array name="progress_array">
+        <item>@string/progress_new</item>
+        <item>@string/progress_in</item>
+        <item>@string/progress_complete</item>
+        <item>@string/progress_out</item>
+    </array>
+
+    <string name="material_calendar_monday">M</string>
+    <string name="material_calendar_tuesday">T</string>
+    <string name="material_calendar_wednesday">W</string>
+    <string name="material_calendar_thursday">T</string>
+    <string name="material_calendar_friday">F</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">S</string>
+
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+    <string name="material_calendar_today_button">Today</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Cancel</string>
+    <string name="task_name">Công việc</string>
+    <string name="description">Mô tả</string>
+    <string name="time_end">Thời gian kết thúc</string>
+    <string name="notify">Thông báo</string>
+    <string name="progress">Tiến độ</string>
+    <string name="newprogress">Chưa thực hiện</string>
+    <string name="inprogress">Đang thực hiện</string>
+    <string name="overprogress">Quá hạn</string>
+    <string name="time_start">Thời gian bắt đầu</string>
+    <string name="completeProgress">Đã hoàn thành</string>
+    <string name="deletetask">Bạn có chắc chắn muốn xóa</string>
+    <string name="Yes">Có</string>
+    <string name="No">Không</string>
+    <string name="time_notify_hour_minutes_day">%02d giờ %02d phút - %02d/%02d/%4d</string>
+    <string name="msg_require_task_name">Tên công việc còn thiếu</string>
+    <string name="msg_notification">Bạn có một công việc cần thực hiện.</string>
+    <string name="title_notification">Quản lý thời gian biểu</string>
+    <string name="error_time_notify">Thời gian thông báo phải trước %02d giờ %02d phút</string>
+    <string name="error_time_end">Thời gian kết thúc phải sau %02d giờ %02d phút - %02d/%02d/%4d</string>
+    <string name="msg_delete_image">Xác nhận xóa ảnh</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
+
